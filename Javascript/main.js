@@ -20,6 +20,7 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoViews(link);
 
 });
@@ -48,6 +49,12 @@ document / addEventListener('scroll', () => {
         arrowup.classList.remove('visible');
     }
 });
+//Navbar toggle button for small screen
+const navbarToggleBtn =document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click',()=>{
+    navbarMenu.classList.toggle('open')
+});
+
 //Handle click on the "arrow up" button
 arrowup.addEventListener('click', () => {
     scrollIntoViews('#home');
