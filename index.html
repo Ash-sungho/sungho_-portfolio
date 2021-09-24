@@ -181,13 +181,13 @@
             <h1>My Work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
-            <button class="category__btn">All<span class="category__count">2</button>
-            <button class="category__btn">KreamProject<span class="category__count">1</button>
-                <button class="category__btn">Talkabout-Project<span class="category__count">1</button>
+            <button class="category__btn" data-filter="*">All<span class="category__count">2</button>
+            <button class="category__btn" data-filter="KreamProject">KreamProject<span class="category__count">1</button>
+                <button class="category__btn" data-filter="TalkaboutProject">TalkaboutProject<span class="category__count">1</button>
             
         </div>
         <div class="work__projects">
-            <a href="#" class="project" target="blank">
+            <a href="#" class="project" target="blank" data-type="KreamProject" >
                 <img class="project__img" src="imgs/Projects/KREAM.jpg" alt="KreamProject">
                 <div class="project__description">
                     <h3>Kream Project</h3>
@@ -195,7 +195,7 @@
                     <span>clone coding with HTML and CSS</span>
                 </div>
             </a>
-            <a href="#" class="project" target="blank">
+            <a href="#" class="project" target="blank" data-type="TalkaboutProject" >
                 <img class="project__img" src="imgs/Projects/talkboutProject.jpg" alt="talkboutProject">
                 <div class="project__description">
                     <h3>Kream Project</h3>
