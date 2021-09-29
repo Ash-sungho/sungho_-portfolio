@@ -4,11 +4,9 @@ const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 const skills = document.querySelector('#skills');
 const skillsHeight = skills.getBoundingClientRect().height;
-console.log(skillsHeight);
 //Make navbar transparent when it is on the top
 document.addEventListener('scroll', () => {
     if (window.scrollY > navbarHeight) {
-        console.log(window.scrollY);
         navbar.classList.add('navbar--dark');
     } else {
         navbar.classList.remove('navbar--dark');
@@ -79,7 +77,6 @@ workBtnContainer.addEventListener('click', (e) => {
     projectContainer.classList.add('anim-out');
     setTimeout(() => {
         projects.forEach((project) => {
-            console.log(project.dataset.type);
             if (filter === '*' || filter === project.dataset.type) {
                 project.classList.remove('invisible');
             } else {
@@ -97,3 +94,25 @@ function scrollIntoViews(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
 }
+
+//1. 모든 섹션 요소들과 메뉴 아이템을 가지고 온다.
+//2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다.
+//3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다.
+
+const sectionIds = ['#home','#about','#skills','#work','#testimonials','#contact'];
+
+const sections = sectionIds.map(id => document.querySelector(id));
+const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
+
+const observerOptions = {
+    root:null,
+    rootMargin :'0px',
+    threshold:0.3,
+}
+const observerCallback = (entries, observer) =>{
+    entries.forEach(entry =>{
+        console.log(entry.target)
+    });
+};
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+sections.forEach(section => observer.observe(section));
