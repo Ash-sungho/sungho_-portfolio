@@ -111,7 +111,7 @@ const observerOptions = {
 }
 const observerCallback = (entries, observer) =>{
     entries.forEach(entry =>{
-        console.log(entry.target)
+        console.log(entry.target);
     });
 };
 const observer = new IntersectionObserver(observerCallback, observerOptions);
