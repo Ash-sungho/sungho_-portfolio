@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="imgs/favicon.png">
     <script src="https://kit.fontawesome.com/2644b1ddc5.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="Javascript/main.js" />
+    <!-- <link rel="stylesheet" href="Javascript/main.js" /> -->
     <link rel="stylesheet" href="style.css" />
     <script src="Javascript/main.js" defer></script>
 </head>
@@ -20,8 +20,8 @@
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
-            <i class="fas fa-user"></i>
-            <a href="#">Sungho</a>
+            <img src="/imgs/favicon.png" alt="logo" style="width: 80px; height: 80px; display: inline;">
+            <a href="https://github.com/Ash-sungho" style="line-height: 80px;" >Sungho</a>
         </div>
 
         
@@ -30,7 +30,7 @@
                 <li class="navbar__menu__item" data-link="#about">About</li>
                 <li class="navbar__menu__item" data-link="#skills">Skills</li>
                 <li class="navbar__menu__item" data-link="#work">My work</li>
-                <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+                <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li> -->
                 <li class="navbar__menu__item" data-link="#contact">Contact</li>
             </ul>
         
@@ -43,7 +43,7 @@
     <!-- Home -->
     <section id="home">
         <div class="home__container">
-        <img class="home__avatar" src="imgs/profile.jpg" alt="profile">
+        <img class="home__avatar" src="imgs/profile.png" alt="profile">
         <h1 class="home__title">Hello,<br />I am Sungho</h1>
         <h2 class="home__description">백엔드와 프론트 엔드를 넘나드는 개발자입니다</h2>
         <button class="home__contact" data-link="#contact">Contact Me</button>
@@ -52,10 +52,11 @@
     <!-- About -->
     <section id="about" class="section section__containter">
         <h1>About me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Rerum sapiente repudiandae quasi ea laborum numquam error
-            illo blanditiis itaque, sint dolores dolore sit assumenda labore quod
-            inventore explicabo delectus nemo.
+        <p style="font-size: large; font-weight: 700; color: lightslategray; line-height: 30px;">새로운것을 배우는걸 두려워하지 않고<br>
+            도전하는 프론트앤드 & 백앤드 개발자 입니다.<br>
+            리액트와 Javascript, html, css ,Spring&Springboot 을 경험했고<br>
+            bootstrap, j-query, Springboot, Mybatis를 이용해 프로젝트를 진행했습니다.<br>
+            새로운 기술을 배워서 적용하는걸 재미있어 하고, 도전하는것을 좋아합니다.
         </p>
         <div class="about__majors">
             <div class="major">
@@ -83,10 +84,10 @@
         </div>
         <div class="about__jobs">
             <div class="job">
-                <Img class="job__logo" src="imgs/jobs/kosta_logo.png" alt="kosta_logo"></Img>
+                <Img class="job__logo" src="imgs/study.jpg" alt="kosta_logo"></Img>
                 <div class="job__description">
-                    <p class="job__name">한국소프트웨어기술진흥협회</p>
-                    <p class="job__period">2021.04.03 ~ 2021.09.07</p>
+                    <p class="job__name">*한국소프트웨어기술진흥협회(2021.04.03 ~ 2021.09.07)</p>
+                    <!-- <p class="job__period"></p> -->
                 </div>
             </div>
         </div>
@@ -95,13 +96,13 @@
     <section id="skills" class="section ">
         <div class="section__containter">
             <h1>Skills</h1>
-            <h2>Skills & Attributes</h2>
+            <!-- <h2>Skills & Attributes</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat enim magnam sunt ipsam sapiente quo?
                 Necessitatibus vitae nisi consectetur esse corrupti assumenda totam. Suscipit voluptatum quae possimus
                 ipsa
                 magni voluptate?
-            </p>
+            </p> -->
             <div class="skillset">
                 <div class="skillset__left">
                     <h3 class="skillset__title">Skills</h3>
@@ -179,7 +180,7 @@
     <section id="work" class="section">
         <div class="section__containter">
             <h1>My Work</h1>
-        <h3>Projects</h3>
+        <!-- <h3>Projects</h3> -->
         <div class="work__categories">
             <button class="category__btn selected" data-filter="*">All<span class="category__count">2</button>
             <button class="category__btn" data-filter="KreamProject">KreamProject<span class="category__count">1</button>
@@ -207,7 +208,7 @@
         
     </section>
     <!-- Testimonials -->
-    <section id="testimonials" class="section">
+    <!-- <section id="testimonials" class="section">
         <div class="section__containter">
             <h1>Testimonials</h1>
         <h3>See What they say about me</h3>
@@ -237,7 +238,7 @@
             </div>
         </div>
         </div>
-    </section>
+    </section> -->
     <!-- Contact -->
     <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
